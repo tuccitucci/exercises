@@ -1,4 +1,5 @@
 body {
+    font-family:sans-serif;
 }
 
 .divmain {
@@ -9,7 +10,7 @@ body {
 .centerbox {
     height:100%;
     width:500px;
-    background-color: #ffffe6;
+    background-color: #ECF0F1;
     margin: auto;
     
 }
@@ -34,7 +35,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #00134d;
+    background-color: #34495E;
 }
 
 .navbar li {
@@ -56,10 +57,18 @@ body {
     background-color: #111;
 }
 
+h3 {
+    padding:15px;
+}
+
 .paragraph {
     padding:20px;
 }
 
 .paragraph em {
     color:red;
+}
+
+h4 {
+    padding:30px;
 }
