@@ -1,0 +1,65 @@
+body {
+}
+
+.divmain {
+    background-color: gray;
+    width:85%;
+    height:100%;
+}
+.centerbox {
+    height:100%;
+    width:500px;
+    background-color: #ffffe6;
+    margin: auto;
+    
+}
+
+.header {
+    height:200px;
+    width:500px;
+    background-color: #2ecc71;
+    margin:auto;
+    display: table-cell;
+    vertical-align: bottom;
+    color:white;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00134d;
+}
+
+.navbar li {
+    float: left;
+    width: 20%;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 14px 8px;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size:12px;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+}
+
+.paragraph {
+    padding:20px;
+}
+
+.paragraph em {
+    color:red;
+}

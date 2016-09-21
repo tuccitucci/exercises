@@ -1,0 +1,114 @@
+p {
+    font-family: cursive;
+}
+
+.first_table tr {
+    border-bottom-width: thin
+    border-color: black;
+    border-bottom-style: solid;
+    
+}
+
+.second_table thead {
+    font-style: bold; 
+}
+
+.second_table tr {
+    border-bottom-width: thin
+    border-color: black;
+    border-bottom-style: solid;
+}
+
+.third_table {
+    border-top-width: thick;
+    border-bottom-width: thick
+    border-width: 20px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    column-gap: 300px;
+}
+
+.numbers {
+    font-size: 48px;
+    text-align: center
+}
+
+.labels {
+    font-size: small;
+    font-family: monospace;
+    text-align: center;
+}
+
+.barchart div {
+    background-color: lightblue;
+}
+
+.barchart td {
+    width: 500px;
+    text-align: left;
+}
+
+h3 {
+   
+    text-align: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,.7);
+  color: white;
+  font-size: 20px;
+  position: fixed;
+  padding: 50px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+}
+
+.overlay > div > div {
+  background: gray;
+  padding: 50px;
+  border-radius: 30px;
+}
+
+.overlay > div > div > div {
+  text-align: center;
+}
+
+.overlay:target {
+  display: block;
+}
+
+.float {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    border: 3px solid #73AD21; 
+    float: left;
+}
+
+.floating {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    padding-bottom: 30px;
+    border: 3px solid #73AD21; 
+    float: left;
+}
+
+.floatingtoo {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-left: 50px;
+    border: 3px solid #73AD21; 
+    float: left;
+}
+
+.pclassend {
+    overflow:hidden;
+    padding:15px;
+}
