@@ -1,10 +1,10 @@
 body {
     font-family:sans-serif;
+    margin: 0;
 }
 
 .divmain {
     background-color: gray;
-    width:85%;
     height:100%;
 }
 .centerbox {
@@ -12,7 +12,6 @@ body {
     width:500px;
     background-color: #ECF0F1;
     margin: auto;
-    
 }
 
 .header {
@@ -72,4 +71,34 @@ h3 {
 h4 {
     padding:0px 30px;
     margin:0;
+}
+
+.table1 {
+    border:1px solid black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table1 th {
+    background-color: #BDC3C7;
+}
+
+.table1, th, td {
+    border: 1px solid black;
+    border-collapse:collapse;
+    padding:10px;
+    font-size: small;
+}
+
+.button {
+ display: block;
+ background: #3498DB;
+ color: white;
+ text-align: center;
+ padding:4px 10px;
+}
+
+a.button {
+ text-decoration: none;
 }
