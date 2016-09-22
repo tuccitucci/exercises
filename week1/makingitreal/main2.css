@@ -4,7 +4,7 @@ body {
 }
 
 .divmain {
-    background-color: gray;
+    background-color: #7F8C8D;
     height:100%;
 }
 .centerbox {
@@ -12,6 +12,7 @@ body {
     width:500px;
     background-color: #ECF0F1;
     margin: auto;
+
 }
 
 .header {
@@ -27,6 +28,12 @@ body {
     font-size: 24px;
     font-weight: bold;
     
+}
+
+.smallbar {
+    height:5px;
+    width:500px;
+    background-color: #27AE60;
 }
 
 .navbar ul {
@@ -101,4 +108,24 @@ h4 {
 
 a.button {
  text-decoration: none;
+}
+
+.codebox {
+    height:70px;
+    width:450px;
+    background-color: #BDC3C7;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family: courier;
+    font-size: 12px;
+    word-wrap: break-word;
+    padding:10px 0px;
+    
+}
+
+.placeholder {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
