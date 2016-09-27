@@ -16,26 +16,30 @@ function validateBirthDate(properDate) {
 }
 alert(validateBirthDate(birthDate));
 
+var postalCode = prompt("Now I need your Zip Code"
+  + "\nSeriously I cannot make this up!\n...and it better be written in"
+  + "XXXXX or XXXXX-XXXX format you scoundrel!");
+
+function validatePostalCode(properCode) {
+  return properCode.length === 5 || properCode.length === 10;
+}
+alert(validatePostalCode(postalCode));
+
+
+var stateCode = prompt("You will not believe this..."
+  + "\nNow I need your current state\n...and it better be written in"
+  + "a two-letter abbreviation format you lovely thing you!");
+
+function validateStateCode(properState) {
+  return properState.length === 2 && properState.toUpperCase();
+}
+alert(validateStateCode(stateCode));
 
 
 
+var simple_marriage_validator = function(word) {
+	alert(married.toLowerCase() === "yes" || married.toLowerCase() == "no");
+};
 
-// phoneNumber.indexOf("-");
-// phoneNumber.lastIndexOf("-");
-// phoneNumber.split('').forEach
-// phoneNumber.forEach(function(prompt) {
-//   if (!parseInt[3] && [7] !== '-') {
-//      return 'Not Valid!!!!!';
-//   }
-// });
-
-
-
-
-// if (phoneNumber === phoneNumber.length[12]) {
-//     alert = "Well Done";
-// } else {
-//     alert = "Try Again";
-// }
-
-// alert("You entered: " + answer + "\nThere are " + answer.length + " characters in the word" + "\nThe third character is " + answer.charAt(2) + "\nLowercase: " + answer.toLowerCase() + "\nUppercase: " + answer.toUpperCase() + "\nHow much " + answer + " could a " + answer + "chuck chuck if a " + answer + "chuck could chuck " + answer + "!" + "\nSubword: " + answer.substr(1,3))
+var married = prompt('Are you married ("yes" or "no")');
+simple_marriage_validator(married)
