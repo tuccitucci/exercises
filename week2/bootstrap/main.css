@@ -1,0 +1,24 @@
+body{
+    background:url('https://static.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg');
+    padding:50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.navbar {
+  background-color: #97ABB1;
+}
+.navbar-brand {
+  background-image: url("http://www.truffl.io/assets/logo.png");
+  background-position: center;
+  background-size: cover;
+}
+
+p {
+  text-align: center;
+}
