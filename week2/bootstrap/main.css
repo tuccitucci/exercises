@@ -1,6 +1,6 @@
 body{
-    background:url('https://static.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg');
-    padding:50px;
+    background:url('https://static.pexels.com/photos/8446/food-vegetables-wood-knife-large.jpg');
+    padding:40px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -21,4 +21,8 @@ h1 {
 
 p {
   text-align: center;
+}
+
+mark {
+  background-color: #97ABB1;
 }
