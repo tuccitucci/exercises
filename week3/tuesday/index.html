@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>NG-REPEAT</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body ng-controller="mainCtrl as main">
+    <h1>Hello hello hi</h1>
+    <ul>
+        <li ng-repeat="monkey in main.monkeys">
+            <span ng-show="$first"> First there was {{ monkey }}</span>
+            <span ng-show="$middle"> Then there was {{ monkey }}</span>
+            <span ng-show="$last"> Finally there was {{ monkey }}</span>
+        </li>
+    </ul>
+    <ul>
+        <li ng-repeat="monkey in main.monkeyObjs">
+            {{ monkey.name }} likes to {{ monkey.biz }} with
+        </li>
+    </ul>
+    <ul>
+        <li ng-repeat="food in monkey.food">
+            {{ food }}
+        </li>
+    </ul>
+    <ul>
+        <li ng-repeat="monkey in main.monkeyDupes track by $index">
+            {{ monkey }}
+        </li>
+    </ul>
+</body>
+
+</html>

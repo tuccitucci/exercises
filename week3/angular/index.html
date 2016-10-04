@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html ng-app="Superheroes">
+  <head>
+    <title>Apply Directives</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body ng-controller="theAvengers as avengers">
+    <h1>Here is is</h1>
+    <p>{{ avengers.title }}</p>
+    <input type="text"
+           ng-model="avengers.newAvenger"/>
+    <button ng-click="avengers.addNewHero()">Press Me!</button>
+    <ol>
+      <li ng-repeat="avenger in avengers.heroes"> {{ avenger }}
+      </li>
+    </ol>
+  </body>
+
+</html>

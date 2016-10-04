@@ -13,11 +13,12 @@ h1 {
 .navbar {
   background-color: #97ABB1;
 }
-.navbar-brand {
+
+/*.navbar-brand {
   background-image: url("http://www.truffl.io/assets/logo.png");
   background-position: center;
   background-size: cover;
-}
+}*/
 
 p {
   text-align: center;

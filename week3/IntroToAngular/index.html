@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Intro to Angular</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div ng-controller="firstCtrl">
+      <button ng-click="click()">Click</button>
+    </div>
+    <div ng-controller="secondCtrl">
+      <div>
+        <button ng-click="clickAgain()">Click again</button>
+      </div>
+      <div>
+        <div ng-show="myValue" class="ng-cloak">
+          <h1>I'm not hiding anymore</h1>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
