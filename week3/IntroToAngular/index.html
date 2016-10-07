@@ -1,25 +1,72 @@
-
 <!DOCTYPE html>
 <html ng-app="myApp">
+
 <head>
     <title>Intro to Angular</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
     <script src="main.js"></script>
 </head>
+
 <body>
-    <div ng-controller="firstCtrl">
-      <button ng-click="click()">Click</button>
-    </div>
-    <div ng-controller="secondCtrl">
-      <div>
-        <button ng-click="clickAgain()">Click again</button>
-      </div>
-      <div>
-        <div ng-show="myValue" class="ng-cloak">
-          <h1>I'm not hiding anymore</h1>
-        </div>
-      </div>
+    <div ng-controller="firstCtrl as clickity">
+        <button ng-click="clickity.click()">click</button>
     </div>
 
+
+
+    <div ng-controller="secondCtrl">
+        <div>
+            <button ng-click="clickAgain()">Click again</button>
+        </div>
+        <div>
+            <div ng-show="myValue" class="ng-cloak">
+                <h1>I'm not hiding anymore</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div ng-controller="thirdCtrl">
+        <div>
+            <button ng-click="oneMoreClick()">One More Click</button>
+        </div>
+        <div>
+            <div ng-show="myValue" class="ng-cloak">
+                <ul>
+                    <li>
+                        Uno
+                    </li>
+                    <li>
+                        Dos
+                    </li>
+                    <li>
+                        Tres
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- Part 2 -->
+    <div>
+      <p ng-style="style" ng-mouseover="style={'color':'pink', 'cursor':'pointer'}" ng-mouseleave="style={}">
+        Hopefully whatever I have typed here will turn PINK when you touch!
+      </p>
+    </div>
+
+
+      <div ng-init="input='Hello'">
+      <h1 ng-bind="'{{ input }}' + '!'"></h1>
+      <h2 ng-bind="'{{ input }}' + '!'"></h2>
+      <h3 ng-bind="'{{ input }}' + '!'"></h3>
+      <h4 ng-bind="'{{ input }}' + '!'"></h4>
+    </div>
+    <div ng-controller="fourthCtrl as clickity">
+        <a href="http://www.google.com" ng-click="clickity.click($event)">click</a>
+    </div>
+
+
+
 </body>
+
 </html>

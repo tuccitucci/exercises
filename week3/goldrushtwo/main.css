@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.marker-container {
+  position: relative;
+}
+
+.map {
+  max-width: 100%;
+  position: absolute;
+}
+
+.marker {
+  position: absolute;
+}
+
+.write-note-popup {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+}
+
+.write-note-popup h4, .write-note-popup input[type="submit"] {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.write-note-popup textarea {
+  height: 100px;
+  width: 160px;
+  font-size: 14px;
+  margin: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.write-note-popup input[type="submit"] {
+  background-color: #e74c3c;
+  color: #ecf0f1;
+  border: none;
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  margin: 5px 50px;
+}
+
+.read-note-popup {
+  position: absolute;
+  height: 100px;
+  width: 115px;
+  overflow: hidden;
+  background-color: lemonchiffon;
+  color: #2c3e50;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px;
+}
+
+.read-note-popup h4 {
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5px;
+}

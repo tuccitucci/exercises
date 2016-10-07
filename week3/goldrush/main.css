@@ -1,0 +1,47 @@
+.map {
+  background-image: url(topo-co.jpg);
+  position: relative;
+  height: 700px;
+  margin: 0;
+  width: 1000px;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.marker {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.marker-container{
+  width: 22px;
+  height: 39px;
+  background-position: 45px;
+  background-size: cover;
+  background-image: url("green-placemarker.svg");
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  opacity: .6;
+  transition: all .5s;
+}
+
+.marker-container:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.remove-tooltip {
+  font-size: 10px;
+  width: 122px;
+  background: black;
+  color: white;
+  padding: 5px 7px;
+  margin-top: -25px;
+  margin-left: -40px;
+  border-radius: 5px;
+}

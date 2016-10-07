@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>Thursday</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Thursday!</h1>
+    <div ng-controller="parkingCntl as park">
+        {{ park.greeting }}
+
+        <ul>
+          <li ng-repeat="lot in park.lots | orderBy: 'capacity' | filter:park.filterLots">
+            {{ lot.capacity }}
+              {{ lot.cost | currency }}
+                {{ lot.location | uppercase }}
+          </li>
+        </ul>
+
+
+    </div>
+
+    <div ng-controller="restaurantCntl as rest">
+        {{ rest.greeting }}
+<input placeholder="Search Names..." ng-model="rest.restFilter" />
+        <ul>
+          <li ng-repeat="rest in rest.restaurants | filter:rest.restFilter">
+            {{ rest.name }}:
+            {{ rest.style }} -
+            <!-- {{ rest.getNearestLot($index) }} -->
+            <ul>
+              <li ng-repeat="item in rest.menu">
+                {{ item }}
+              </li>
+            </ul>
+
+          </li>
+        </ul>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

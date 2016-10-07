@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>...</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+<script src="app.js"></script>
+</head>
+<body ng-controller="MainCtrl as main">
+  <div class="map" ng-click="main.placeMarker($event)"></div>
+  <div class="marker-container"
+       ng-repeat="marker in main.markerArray"
+       style="top: {{marker.y}}px; left: {{marker.x}}px ;"
+       ng-mouseover="hovering = true"
+       ng-mouseleave="hovering = false"
+       ng-click="main.removeMarker($event,$index);">
+       <div class="remove-tooltip" ng-show="hovering">
+         Click Marker to Remove
+       </div>
+  </div>
+
+
+</body>
+</html>

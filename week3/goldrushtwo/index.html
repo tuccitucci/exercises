@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="goldRushApp">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <title>Gold Rush</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body ng-controller="goldRushController">
+
+    <div class="topo">
+      <!-- Image of map. Marker can be placed upon clicking at any location on the map  -->
+      <img src="topo-co.jpg" class="map" ng-click="placeMarker($event)" />
+
+      <!-- Div to contain marker. Repeats based on amount of markers inside the $scope.markers array.  -->
+      <div class="marker-container"  ng-repeat="marker in markers">
+        <!-- Image of marker. Removed from the map upon being clicked.  -->
+        <img src="reddot.jpg" style="top: {{marker.y}}px; left: {{marker.x}}px" class="marker" ng-click="removeMarker($index)" ng-mouseover="showPopUpNote($index)" ng-mouseleave="showPopUpNote($index)"/>
+
+        <!-- Div to display the note added to marker.  -->
+        <div class="read-note-popup" style="top: {{marker.y}}px; left: {{marker.x+30}}px" ng-show="marker.showNote">
+          <h4>Note</h4>
+          <p>{{marker.note}}</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Div that contains form to add note to marker. Note is stored inside the marker object. Div is closed upon clicking submit button.  -->
+    <div class="write-note-popup" style="top: {{marker.y}}px; left: {{marker.x+30}}px" ng-show="writeNote">
+      <h4>Enter Note</h4>
+      <form>
+        <textarea ng-model="marker.note"></textarea>
+        <input type="submit" value="Submit" ng-click="closeNoteEntryPopUp()"/>
+      </form>
+    </div>
+
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
