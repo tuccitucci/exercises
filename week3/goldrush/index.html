@@ -17,8 +17,12 @@
        ng-mouseover="hovering = true"
        ng-mouseleave="hovering = false"
        ng-click="main.removeMarker($event,$index);">
+       <span class="display-note" ng-hide="hovering">{{marker.note}}</span>
        <div class="remove-tooltip" ng-show="hovering">
          Click Marker to Remove
+       </div>
+       <div class="notes-tooltip" ng-show="hovering">
+         <textarea ng-model="marker.note" placeholder="Enter Note Here"></textarea>
        </div>
   </div>
 

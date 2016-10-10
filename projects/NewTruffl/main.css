@@ -1,0 +1,9 @@
+body {
+    background:url('https://static.pexels.com/photos/140928/pexels-photo-140928.jpeg');
+    background-size: auto;
+    height:100%;
+}
+
+.navbar {
+  background-color: #97ABB1;
+}

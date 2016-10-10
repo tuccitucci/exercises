@@ -26,8 +26,9 @@
   position: absolute;
   margin: 0;
   padding: 0;
-  opacity: .6;
   transition: all .5s;
+  opacity: .6;
+  z-index: 1;
 }
 
 .marker-container:hover {
@@ -44,4 +45,22 @@
   margin-top: -25px;
   margin-left: -40px;
   border-radius: 5px;
+}
+
+.display-note {
+  top: 44px;
+  left: -37px;
+  position: absolute;
+  width: 100px;
+  color: red;
+  font-weight: 600;
+  background-color: blue;
+  text-align: center;
+}
+
+.notes-tooltip {
+  margin-top: 40px;
+  margin-left: -60px;
+  z-index: 999;
+  position: relative;
 }

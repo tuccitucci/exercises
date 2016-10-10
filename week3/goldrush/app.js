@@ -8,15 +8,20 @@ function mainController() {
 
   main.placeMarker = function($event) {
     if ($event.target.className.indexOf('marker-container') < 0) {
+console.log($event);
       var marker = {
         x : $event.pageX - 12,
         y : $event.pageY - 35,
       };
+
       main.markerArray.push(marker);
     }
+
   };
 
   main.removeMarker = function($event, $index) {
-    main.markerArray.splice($index,1);
+    if ($event.target.className.indexOf('marker-container') >= 0) {
+      main.markerArray.splice($index,1);
+    }
   }
 }
