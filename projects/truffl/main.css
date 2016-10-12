@@ -1,9 +1,11 @@
 body {
     background:url('https://static.pexels.com/photos/140928/pexels-photo-140928.jpeg');
-    /*padding:40px;*/
+    padding:40px;
     background-size: auto;
     height:100%;
-    /*background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
 }
 
 h1 {
@@ -13,7 +15,7 @@ h1 {
 
 
 .parallax {
-    background-image:url("https://static.pexels.com/photos/139751/pexels-photo-139751.jpeg");*/
+    background-image:url("https://static.pexels.com/photos/139751/pexels-photo-139751.jpeg");
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -22,10 +24,18 @@ h1 {
   }
 
 
+.container {
+  margin-top: 50px;
+}
+
+
 .navbar {
   background-color: #97ABB1;
 }
 
+.active > a {
+  background color: blue;
+}
 /*.navbar-brand {
   background-image: url("http://www.truffl.io/assets/logo.png");
   background-position: center;
@@ -43,4 +53,14 @@ mark {
 
 body > div > div:nth-child(6) > div {
   background-color: rgba(255,255,255,0.4);
+}
+
+ng-view {
+
+
+
+}
+
+label {
+  color: black;
 }
